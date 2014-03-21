@@ -1,0 +1,81 @@
+<doctype html>
+<html>
+	<head>
+		<title>Learn CSS By Playing Around</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	</head>
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">HTML</a>
+					<a href="css.html" class="navbar-brand">CSS</a>
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="page-header" id="banner">
+				<div class="container">
+					<div class="col-lg-8">
+						<div class="container" style="margin-top:70px"></div>
+						<h1>Learn CSS By Playing Around</h1>
+						<p class="lead">Now let's play with CSS!  You may have noticed something about the sample web pages <a href="index.html">on the previous page</a>: they're ugly!  That's because HTML is meant to define the <i>structure</i> of the page, and another language, called CSS, is used to make it look nice.  CSS stands for "Cascading Style Sheets," which is quite a mouthful.  You'll learn what all those words mean in a little bit.  For now, let's make some web pages look prettier.</p>
+					</div>
+					<div class="col-lg-4">
+						<img src="images/computer_girl_2.jpg" width=350>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="col-lg-4">
+				<img src="images/computer_man_1.jpg" width=350 height=246>
+			</div>
+			<div class="col-lg-8">
+				<p class="lead">Here's a page that shows how to create a yellow banner (don't forget to view the source!): <a href="sample_html/css_1_yellow_banner_page.html" target="_blank">yellow banner page</a></p>
+
+				<p class="lead">That's a simple page, but we'll use that as starting point to play with CSS.  Here's another cool feature of Google Chrome: right click (or control-click on a Mac) on the banner and then choose "Inspect Element."  What pops up is the best playground a web developer like yourself could imagine.  There are lots of different things you can do in this playground, but we'll focus first on what you should immediately see: the HTML source of the page together with some information about the CSS on the right.</p>
+			</div>
+		</div>
+		<div class="container" style="margin-top:70px"></div>
+		<div class="container">
+			<div class="col-lg-8">
+				<p class="lead">First, look at the HTML source.  You'll notice we have a standard "p" (for "paragraph") tag, but then we add this bit:</p>
+				<code style="margin:40px">style="background-color: yellow; width: 50%; font-size: 20px; padding: 40px"</code>
+				<br/>
+				<br/>
+				<p class="lead">That's CSS.  As you can see, you use it to define what the HTML elements look like.  Here, we're setting the background color to yellow, the width to 50% of the page, the font size to 20 pixels, and the padding (the space around the edge of the banner) to 40 pixels.</p>
+
+				<p class="lead">Now for the fun part: let's play with it!  See how on the righthand side, Google Chrome has a little window like this?</p>
+
+				<p class="lead"><img src="images/chrome_style_tab.png"></p>
+
+				<p class="lead">Click the word "yellow" and then type in "red".  Cool, right?  You can use most common color names to specify the color.  But if you want to get fancier, you can use RGB (red-green-blue) values.  Those look like this: #40D2A4.  Try putting that value into the box and see what happens.  Web developers don't memorize crazy combinations of letters and numbers, though.  We use <a href="http://www.w3schools.com/html/html_colors.asp" target="_blank">pages like this</a> that show us different colors and let us grab the RGB value.</p>
+
+				<p class="lead">Now click the checkbox next to "background-color" &mdash; that turns off the background color completely, as if that code didn't exist at all.  That can be a really handy way to know if your CSS code is doing what you think it's doing.</p>
+
+				<p class="lead">Go through each property listed and play with the values.  For "width", try different percent values.  Then, try values like "100px" and see what happens.</p>
+			</div>
+			<div class="col-lg-4">
+				<img src="images/computer_boy_2.jpg" width=350 height=321>
+			</div>
+		</div>
+		<div class="container" style="margin-top:70px"></div>
+		<div class="container">
+			<div class="col-lg-4">
+				<img src="images/computer_kids_1.jpg" width=347 height=345>
+			</div>
+			<div class="col-lg-8">
+				<p class="lead">You may have noticed a little arrow next to the "padding" property.  If you click that, you'll see that it expands into four different properties.  Using the "padding" property is really just a shorthand for specifying the padding above, on the right, on the left, and below the text.  That's just one of the many things you can learn by playing around with CSS in this way.</p>
+				<p class="lead">You can even add new CSS parameters on the fly, which is a great way to experiment with CSS.  Just click near the end of the list of parameters &mdash; roughly where the red circle is here:</p>
+				<p class="lead"><img src="images/chrome_style_tab_red_circle.png"></p>
+			</div>
+		</div>
+	</body>
+</html>
